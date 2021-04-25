@@ -5,6 +5,7 @@ class Main extends Component{
     render(){
         return(
          <div>
+             HI
          <Navbar></Navbar>
          </div>
         );
