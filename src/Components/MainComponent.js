@@ -5,7 +5,9 @@ class Main extends Component{
     render(){
         return(
          <div>
-             HI
+            <div>
+                <h1></h1>
+            </div>
          <Navbar></Navbar>
          </div>
         );
