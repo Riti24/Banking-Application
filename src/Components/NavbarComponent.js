@@ -8,7 +8,7 @@ class Navbar extends Component{
     render(){
         console.log("navbar")
         return(
-         <div className="Navbar" style={{ backgroundImage: 'url("/assets/images/background-navbar.jpg")'}}>
+         <div className="Navbar" style={{ backgroundImage: 'url("/assets/images/background-navbar.jpg")',height:'20vh'}}>
              <i className="fa fa-university"></i>   
              <h5>My Bank</h5> 
              <div style={{float:'Right'}}>
