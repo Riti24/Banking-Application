@@ -4,9 +4,11 @@
 .Navbar{
   /* background-image: url("/src/Components/background-navbar.jpg"), */
   /* background-image: url("https://in.pinterest.com/pin/376332112610717344/visual-search/?x=16&y=10&w=530&h=150&cropSource=6"); */
-  background-color: rgba(10, 10, 71, 0.979);
+  /* background-color: rgba(10, 10, 71, 0.979); */
+  /* background-image: url("../public/assets/images/background-navbar.jpg"); */
   color:mintcream
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
