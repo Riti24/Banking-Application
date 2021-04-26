@@ -6,8 +6,8 @@
   /* background-image: url("https://in.pinterest.com/pin/376332112610717344/visual-search/?x=16&y=10&w=530&h=150&cropSource=6"); */
   /* background-color: rgba(10, 10, 71, 0.979); */
   /* background-image: url("../public/assets/images/background-navbar.jpg"); */
-  height: 40px;
-  padding-top: 20px;
+  height: 10%;
+  padding-top: 5%;
   padding-left: 30px;
 }
 .right{
@@ -17,6 +17,9 @@
 }
 .Pad{
   padding-left: 30Px;
+}
+.fa{
+  padding-right: 1rem;
 }
 
 .App-logo {
@@ -53,4 +56,14 @@
     transform: rotate(360deg);
   }
 }
+.inner-container{
+  margin:22%;
+  text-align: center;
+}
 
+.box{
+  border: solid;
+  border-radius: 10px;
+  width: fit-content;
+
+}
