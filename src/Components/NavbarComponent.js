@@ -10,8 +10,9 @@ class Navbar extends Component{
         return(
          <div className="Navbar" style={{ backgroundImage: 'url("/assets/images/background-navbar.jpg")', 
          boxShadow:' 20px 20px 50px grey' ,color:'mintcream'}}>
-             <i className="fa fa-university Pad">
-                 <div>My Bank</div></i>
+             <i className="fa fa-university Pad ">
+                 <div>My Bank</div>
+                 </i>
              
              <div className="right">
              <i  className="fa fa-envelope-open " aria-hidden="true">

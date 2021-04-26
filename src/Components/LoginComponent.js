@@ -1,14 +1,52 @@
 import React, { Component } from 'react';
 import Navbar from './NavbarComponent';
+import '../App.css';
 
-class Login extends Component{
-    render(){
-        return(
-         <div>
-         <h1>Login</h1>
-         </div>
-        );
+class Login extends React.Component {
+
+    constructor(props) {
+      super(props);
+      this.state = {};
     }
-}
+  
+    submitLogin(e) {}
+  
+    render() {
+      return (
+        <div className="inner-container">
+          <div className="box">
+            Login
+          {/* <div className="box"> */}
+  
+            <div className="input-group">
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                className="login-input"
+                placeholder="Username"/>
+            </div>
+  
+            <div className="input-group">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                className="login-input"
+                placeholder="Password"/>
+            </div>
+  
+            <button
+              type="button"
+              className="login-btn"
+              onClick={this
+              .submitLogin
+              .bind(this)}>Login</button>
+          </div>
+          </div>
+      );
 
+    }
+  
+  }
 export default Login;
