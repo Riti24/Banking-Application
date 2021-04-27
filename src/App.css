@@ -13,7 +13,14 @@
 .right{
   float: right;
   padding-right: 20px;
-
+}
+.links{
+  text-decoration: none;
+  padding-left: 2%;
+}
+.home-content{
+  height: 20rem;
+  background-color: midnightblue;
 }
 .Pad{
   padding-left: 30Px;
