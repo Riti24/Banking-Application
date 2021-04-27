@@ -16,8 +16,6 @@ class Login extends React.Component {
         <div className="inner-container">
           <div className="box">
             Login
-          {/* <div className="box"> */}
-  
             <div className="input-group">
               <label htmlFor="username">Username</label>
               <input
