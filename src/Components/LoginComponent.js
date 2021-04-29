@@ -13,8 +13,8 @@ class Login extends React.Component {
         username:"",
         password:""
       }
-      this.changeHandler=this.changeHandler.bind(this);
-      this.submitLogin=this.submitLogin.bind(this);
+      // this.changeHandler=this.changeHandler.bind(this);
+      // this.submitLogin=this.submitLogin.bind(this);
       
     }
     changeHandler=(e)=>{
