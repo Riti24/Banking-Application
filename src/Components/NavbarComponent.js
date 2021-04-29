@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Home from './HomeComponent';
 
 
 
@@ -28,6 +29,7 @@ class Navbar extends Component{
              </i>
              {/* </button> */}
              </div> 
+             
              
          </div>
         );

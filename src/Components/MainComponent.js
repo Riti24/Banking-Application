@@ -4,6 +4,7 @@ import Login from './LoginComponent';
 import Home from './HomeComponent';
 import { Redirect, Route,Switch } from 'react-router';
 import Payments from './PaymentsComponent';
+import Footer from './FooterComponent';
 
 class Main extends Component{
     render(){
@@ -16,6 +17,7 @@ class Main extends Component{
                 <Route exact path="/payments" component={Payments}></Route>
                 <Redirect to="/home"></Redirect>
                 </Switch>
+                <Footer></Footer>
             </div>
         );
     }

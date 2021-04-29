@@ -146,10 +146,9 @@ li{
   li {
     margin-left: -15%;
   }
-  .PaymentsMain{
-    padding-left: 0rem;
-  }
+ 
   .ParentCard{
-    width:98%
+    width:98%;
+    padding-left:0rem;
   }
 }
