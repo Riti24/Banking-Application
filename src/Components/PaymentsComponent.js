@@ -24,6 +24,15 @@ class Payments extends Component{
             
         }
     }
+    // onSpanClick=()=>
+    // {
+    // //   const style={display:'none' }
+    // //   return style;
+    //   this.setState({
+           
+    //     isModalOpen:!this.isModalOpen
+    //    })
+    // }
     ontransferClick=()=>{
         alert("Paise nahi hai kahin bhi!!! Transfer kahan se karoge?? 🤑")
     }
@@ -87,6 +96,7 @@ class Payments extends Component{
                     </div>
 
                     <div className="modal" style={{display:this.state.isModalOpen?'block':'none' }}>
+                        <button className="ModalClose" onClick={()=>{this.setState({isModalOpen:!this.state.isModalOpen})}} style={{display:this.state.isModalOpen?'block':'none' ,cursor:'pointer'}}>Close</button>
                     <form>
                     <label>Your Account Number</label>
                         <input type='text' ></input><br/> 

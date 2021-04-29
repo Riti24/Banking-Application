@@ -3,18 +3,32 @@ import Navbar from './NavbarComponent';
 import '../App.css';
 import Home from './HomeComponent';
 import {Redirect,Link} from 'react-router-dom';
+import {LoginData} from "../shared/logindata";
+
 
 
 class Login extends React.Component {
-
     constructor(props) {
       super(props);
       this.state={
         username:"",
-        password:""
+        password:"",
+        logData:LoginData,
+        loading:true
       }
       // this.changeHandler=this.changeHandler.bind(this);
       // this.submitLogin=this.submitLogin.bind(this);
+      
+    }
+     componentDidMount=()=>{
+      const url="http://localhost:3001/login";
+      // const response=  fetch(url);
+      // const data= response.json();
+      // console.log(data); 
+      fetch(url)
+      .then(response=>response.json())
+      .then(data=>console.log(data))
+      .catch(error=>console.log(error))
       
     }
     changeHandler=(e)=>{
@@ -25,8 +39,18 @@ class Login extends React.Component {
        })
     }
    submitLogin=(e)=>{
-     console.log(this.state.username);
-     this.props.history.push("/Home");
+    //  console.log(this.state.logData);
+      let verify=this.state.logData.filter((data)=>data.username==this.state.username && data.password==this.state.password);
+      if (verify.length !=0)
+      {
+        
+        this.props.history.push("/Home");
+      }
+      else
+      {
+        alert("chala ja ...");
+       
+      }
      e.preventDefault();
 
      

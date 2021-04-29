@@ -36,36 +36,4 @@ class Navbar extends Component{
     }
 }
 
-// function checkLogin(){
-//     if(){
-//         loggedin();
-//     }
-
-//     else{
-//         notloggedin();
-//     }
-// }
-
-// function notloggedin(){
-// return(
-//     <div>
-//         <div className="Navbar">
-//              <h1>Logo</h1>
-//              <i className="fas fa-piggy-bank"></i>    
-//          </div>
-    
-//     </div>
-// )
-
-// }
-
-// function loggedin(){
-// return(
-//     <div className="Navbar">
-//              <h1>Logo</h1><i className="fas fa-piggy-bank"></i>   
-
-//     </div>
-// )
-// }
-
 export default Navbar;

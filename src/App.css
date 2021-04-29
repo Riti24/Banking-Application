@@ -19,7 +19,7 @@
   padding-left: 2%;
 }
 .home-content{
-  height: 20rem;
+  height: 40rem;
   background-color: midnightblue;
 }
 .Pad{
@@ -151,4 +151,8 @@ li{
     width:98%;
     padding-left:0rem;
   }
+}
+.ModalClose{
+  float:right;
+  color:midnightblue;
 }
