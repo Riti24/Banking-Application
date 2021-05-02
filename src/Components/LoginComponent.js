@@ -6,7 +6,6 @@ import {Redirect,Link} from 'react-router-dom';
 import {LoginData} from "../shared/logindata";
 
 
-
 class Login extends React.Component {
     constructor(props) {
       super(props);
@@ -16,8 +15,7 @@ class Login extends React.Component {
         logData:LoginData,
         loading:true
       }
-      // this.changeHandler=this.changeHandler.bind(this);
-      // this.submitLogin=this.submitLogin.bind(this);
+     
       
     }
      componentDidMount=()=>{
@@ -29,8 +27,9 @@ class Login extends React.Component {
       .then(response=>response.json())
       .then(data=>console.log(data))
       .catch(error=>console.log(error))
-      
+
     }
+   
     changeHandler=(e)=>{
       const id=e.target.name;
       const value=e.target.value;
@@ -39,7 +38,7 @@ class Login extends React.Component {
        })
     }
    submitLogin=(e)=>{
-    //  console.log(this.state.logData);
+    
       let verify=this.state.logData.filter((data)=>data.username==this.state.username && data.password==this.state.password);
       if (verify.length !=0)
       {
@@ -57,6 +56,7 @@ class Login extends React.Component {
    }
   
     render() {
+      
       return (
           <div className="inner-container">
           <div className="box">
@@ -69,7 +69,7 @@ class Login extends React.Component {
                 name="username"
                 className="login-input"
                 placeholder="Username" value={this.state.username} onChange={this.changeHandler} />
-
+                
   
               <label htmlFor="password">Password</label>
               <input

@@ -132,6 +132,28 @@ li{
  text-align: center;
  padding-top: 0.3rem;
 }
+
+.CardCart{
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,182,0,0.2);
+  width: 14rem;
+  height: 6rem;
+  background-color: ghostwhite;
+  /* margin-top: 1rem; */
+  /* margin-left: 2rem; */
+  margin:2rem;
+}
+
+.CarddataCart{
+  color:midnightblue;
+ text-align: center;
+ padding-top: 0.3rem;
+}
+
+.ProductImage{
+width:10%;
+height:10%
+}
 /* .Container{
   display:flex;
   flex-direction: row;
