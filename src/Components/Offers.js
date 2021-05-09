@@ -50,6 +50,7 @@ class Offers extends Component{
     render(){
         const data=  this.state.Data.map((da)=>{
             return(
+                
                   <div className="CardCart" key={da.id}>
                      
                   <div className="CarddataCart">
@@ -60,6 +61,7 @@ class Offers extends Component{
                   </div>
 
                   </div>
+                 
             );   })
         return(
             <div>
@@ -75,9 +77,12 @@ class Offers extends Component{
                     </div>
                     <h1>Mutual Funds</h1>
                 </div>
+                <div>
                 
                   {data}
+                  </div>
         </div>        
+
         );
     }
 }

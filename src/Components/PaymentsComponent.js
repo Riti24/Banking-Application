@@ -88,7 +88,7 @@ class Payments extends Component{
                     </div>    
                     <div className="Card">
                         <div className="Carddata">
-                            {/* <h6 style={{alignContent:'center'}}>Bill Payment</h6> */}
+                            
                             <i className="fa fa-credit-card-alt fa-2x" aria-hidden="true"></i>
                             <p>Credit Card Transfer</p>
                         </div>
